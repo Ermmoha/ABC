@@ -11,7 +11,7 @@ fun main() {
         var currentLength = 0
 
         // Перебираем символы строки, начиная с первого индекса, чтобы проверять пары символов
-        for (i in 0 until content.length - 1 step 2) {  // Используем диапазон с включением конечного значения
+        for (i in 0..<content.length - 1 step 2) {  // Используем диапазон с включением конечного значения
             // Берем пару символов вручную
             val firstChar = content[i]
             val secondChar = content[i + 1]
